@@ -1,6 +1,6 @@
+Hi 
 
-
-Token -- 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 
+Token --   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
 
 
 Github Notes -1stday 10-05-2022
@@ -89,7 +89,7 @@ git clean -f --> it will clean immediately all the non committed files which are
 
 add one more repository using git remote add alias "URL"
 
-git remote remove alias name --> to remove existing remote URL
+git remote remove alias name --> to remove existing remote repo URL
 
 create an account on gitlab and bitbucket and map remote repository URL with local git repository and push the codes to there 
 
@@ -105,7 +105,7 @@ git reset filename --> to get back particular files from staging area to working
 
 git status 
 
-once any file get updated with any points it will automatically get back from stage to working area 
+once any file get updated with any points it will automatically get back from stage area to working area 
 
 git add .
 
@@ -169,7 +169,7 @@ git branch -d branch name --> to delete a branch
 
 git checkout branch name --> to switch to other branch 
 
-git commit -a -m " message" 
+git commit -a -m " message" or git commit -am " message"
 
 git diff branch name --> to compare or find the differences the current branch codes or files vs command given other branch name 
 
