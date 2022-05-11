@@ -1,1 +1,193 @@
+
+
 Token -- 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 
+
+
+Github Notes -1stday 10-05-2022
+--------------------------------
+
+git bash need to be installed on macbook/Windows 
+
+before this should have github account and create New org, repo, teams, members and provide repo access to team members 
+
+login to git bash on local windows machine
+
+git --verison  --> to check github version
+
+cd ~/Desktop and create a dir on desktop with project name like walmart or filpkart 
+
+then cd walmart or flipkart --> here only we are practicing the git bash commands 
+
+execute git init --> then create local repo on same folder 
+
+   /users/username/Desktop/walmart --> this is the path 
+
+IDE's (using this developers are developing the codes) --> Integrated Development environments  ex: eclipse, intelliJ, V S C ( visual studio code), Atom
+
+git bash Commands
+-------------------
+
+1) Vi DButils.java or StringUtils.java or deply.sh --> create a file with VI editor 
+
+here we have 3 stages like working area, staging area, local repo --> files are moving one stage to anthoer stage by using git bash commadns 
+
+2) git status --> to checkfile status
+
+3) git add . or git add * or git add *.java or git add DBUtils.java --> to change file pattern  
+
+4) git config --global user.name "reddylokanath"
+
+5) git config --global user.eamil "reddylokanath.anki@gmail.com"
+
+6) git config --global --list 
+
+7) git commit -m "message"
+
+8) getting connection from local repo to remote repo by using commands
+
+  git remote add  WM  "https://github.com/devops-lokanath-reddy/flipkart.git 
+                 alias
+9) git remote -v --> to check existing connected URl's
+
+10) git push WM master --. to push the all files to remote repo
+
+11) here first time we need to give github username and password or PAT(personal authentication token) and these pasword are stored in local machine --> credentials manager or keychain access
+
+12) to get token goto github site and in that settings> developer settings> personal access tokens 
+
+13) then run the command --> git push WM master -- now all files are moved to remote repository
+
+14) after pusshig if any file got modified then use --> git add . > git commit -a -m "message" > git push WM master 
+
+15) git log --> to find all commits in local repo
+
+16) git log -2 --> to find last updated 2 commits in local repo 
+
+17) git show <commit id> --> to check what user changed on particulaar commit id 
+
+18) git show --pretty="" --name-only <commit id > --> to find file name with updated commit id 
+
+
+
+
+
+Day 2 class notes 
+-------------------------
+
+
+Go to project path and execute the below commands
+
+git status 
+
+create any two files like .txt and .py files 
+
+git status
+
+git clean -n --> it will ask if you want to remove files
+
+git clean -f --> it will clean immediately all the non committed files which are newly files located in working area 
+
+add one more repository using git remote add alias "URL"
+
+git remote remove alias name --> to remove existing remote URL
+
+create an account on gitlab and bitbucket and map remote repository URL with local git repository and push the codes to there 
+
+create any 3 files like .js and .css .rb 
+
+git status
+
+git add .
+
+git reset --> if we forgot about code status and wants to get back all the files from staging area to working area 
+
+git reset filename --> to get back particular files from staging area to working area
+
+git status 
+
+once any file get updated with any points it will automatically get back from stage to working area 
+
+git add .
+
+git status
+
+git commit -m "message"
+
+git push WM master --> to push the codes to remote repository
+
+git revert <commit id > --> to rollback the codes and deleting newly created files with same commit id which are updated on particular commit id by user
+
+Note: 
+-----
+
+it is possible to revert only recent last commit id only not previous commit ids 
+
+after revert run push command to update the codes in remote repository 
+
+
+Note:
+------
+in remote repository every files which are pushed from local repo to remote repo each file have right side commit ids those are calling as commit id or version id or revision id 
+
+V C S ( version control system)
+---------
+
+git --> VCS or DCVS distributed version control system
+SVN
+tfs
+CVS --> these above three except git are dont have local repo, its has to connect to remote repo and perform the codes 
+
+S C M 
+------
+
+Github --> it is a SCM (source code management) and remote repository and it is providing GUI and it is a hosted service for git 
+bitbucket
+gitlab
+
+for the above three SCMs we can use same commands by using git and these are created and developed on top of git only.
+
+Note : 
+--------
+here we can create .gitignore file and add any files which are like .classpath and .project inside the .gitignore file 
+
+if we dont want to commit any files (like .classpath and .project or any dirnames ) we can use above .gitignore file 
+
+after all these if we commit also only .gitignore file going to commit thats it and it only can push into remote repository 
+
+Branches 
+--------
+
+master, development, dev , uat, prod
+
+git status  
+
+git branch --> how many branches are in local repo 
+
+git branch branch name --> to create a new branch 
+
+git branch -d branch name --> to delete a branch
+
+git checkout branch name --> to switch to other branch 
+
+git commit -a -m " message" 
+
+git diff branch name --> to compare or find the differences the current branch codes or files vs command given other branch name 
+
+git merge branch name --> to copy or replace the current branch codes  files with  command given other branch name
+
+Note:
+------
+when you are updating code on any branch with out commit dont switch to other branch it is not better practice 
+
+if you have not committed the code will reflect on other branch also 
+
+
+
+
+Day 3 class notes 
+-------------------------
+
+
+
+
+
